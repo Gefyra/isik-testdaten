@@ -1,8 +1,8 @@
 //Minimalbeispiel Patient Winnie Minimal mit stationärem und nachstationärem Aufenthalt,
+//Selbstzahler
 //Appendizitis mit Appendektomie ohne Nebendiagnosen
 Instance: SC2Patient
 InstanceOf: https://gematik.de/fhir/ISiK/v2/StructureDefinition/ISiKPatient
-Usage: #example
 * identifier[0].type = $identifier-type-de-basis#GKV
 * identifier[=].system = "http://fhir.de/sid/gkv/kvid-10"
 * identifier[=].value = "B123456789"
@@ -16,6 +16,12 @@ Usage: #example
 * gender = #male
 * birthDate = "1970-07-07"
 
+Instance: SC2Coverage
+InstanceOf: https://gematik.de/fhir/ISiK/v2/StructureDefinition/ISiKVersicherungsverhaeltnisSelbstzahler
+* status = #active
+* type = $versicherungsart-de-basis#SEL
+* beneficiary = Reference(SC2Patient)
+* payor = Reference(SC2Patient)
 
 Instance: SC2Encounter1
 InstanceOf: https://gematik.de/fhir/ISiK/v2/StructureDefinition/ISiKKontaktGesundheitseinrichtung

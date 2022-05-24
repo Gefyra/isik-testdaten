@@ -1,4 +1,5 @@
 //Minimalbeispiel Patient Minnie Minimal mit stationärem und nachstationärem Aufenthalt,
+//ges. Versicherung
 //Appendizitis mit Appendektomie mit Nebendiagnosen
 Instance: SC1Patient
 InstanceOf: https://gematik.de/fhir/ISiK/v2/StructureDefinition/ISiKPatient
@@ -15,6 +16,19 @@ Usage: #example
 * name[=].given = "Minnie"
 * gender = #female
 * birthDate = "1988-08-08"
+
+Instance: SC1Coverage
+InstanceOf: https://gematik.de/fhir/ISiK/v2/StructureDefinition/ISiKVersicherungsverhaeltnisGesetzlich
+* identifier.type = $identifier-type-de-basis#GKV
+* identifier.system = "http://fhir.de/sid/gkv/kvid-10"
+* identifier.value = "A123456789"
+* status = #active
+* type = $versicherungsart-de-basis#GKV
+* beneficiary = Reference(SC1Patient)
+* payor.identifier.type = $v2-0203#XX
+* payor.identifier.system = "http://fhir.de/sid/arge-ik/iknr"
+* payor.identifier.value = "260326822"
+* payor.display = "Eine Gesundheitskasse"
 
 
 Instance: SC1Encounter1
