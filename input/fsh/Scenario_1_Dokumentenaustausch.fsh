@@ -1,3 +1,4 @@
+//Pathobefund, OP-Einwilligung, OP-BEricht und Entlassbrief für Szenario 1
 
 Instance: SC1Binary1
 InstanceOf: https://gematik.de/fhir/ISiK/v2/StructureDefinition/ISiKBinary

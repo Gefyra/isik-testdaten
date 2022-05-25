@@ -1,3 +1,5 @@
+//Tägliche Fiebermesswerte für Szenario 1
+
 Instance: SC1Observation1
 InstanceOf: https://gematik.de/fhir/ISiK/v2/StructureDefinition/ISiKKoerpertemperatur
 * status = #final
