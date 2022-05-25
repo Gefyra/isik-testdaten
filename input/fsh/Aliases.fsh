@@ -44,3 +44,5 @@ Alias: $kdl = http://dvmd.de/fhir/CodeSystem/kdl
 Alias: $ihe-de-fac = http://ihe-d.de/CodeSystems/PatientBezogenenGesundheitsversorgung
 Alias: $ihe-de-format = http://ihe-d.de/CodeSystems/DeutscheDokumentenformate
 Alias: $ihe-format = http://ihe.net/fhir/ihe.formatcode.fhir/CodeSystem/formatcode
+Alias: $observation-category = http://terminology.hl7.org/CodeSystem/observation-category
+Alias: $v3-ObservationInterpretation = http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation

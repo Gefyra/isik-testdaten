@@ -108,8 +108,9 @@ InstanceOf: https://gematik.de/fhir/ISiK/v2/StructureDefinition/ISiKProzedur
 Usage: #example
 * status = #completed
 * category = $sct#387713003 "Surgical procedure (procedure)"
-* code.coding[+] = $ops#5-470 "Appendektomie"
-  * version = "2021"
+* code
+  * coding[+] = $ops#5-470 "Appendektomie"
+    * version = "2021"
   * text = "Entfernung des Blinddarms"
 * subject = Reference(SC2Patient)
 * encounter = Reference(SC2Encounter1)
