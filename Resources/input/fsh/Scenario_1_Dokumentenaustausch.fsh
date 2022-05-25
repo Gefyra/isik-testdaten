@@ -20,7 +20,7 @@ InstanceOf: https://gematik.de/fhir/ISiK/v2/StructureDefinition/ISiKDokumentenMe
 * securityLabel = $v3-Confidentiality#N
 * content.attachment.contentType = #application/pdf
 * content.attachment.language = #de
-* content.attachment.url = Reference(SC1Binary1)
+* content.attachment.url = "Binary/SC1Binary1"
 * content.attachment.creation = "2021-02-15T23:50:50+01:00"
 * content.format = $ihe-format#urn:ihe:iti:xds:2017:mimeTypeSufficient "mimeType Sufficient"
 * context.facilityType = $ihe-de-fac#KHS "Krankenhaus"

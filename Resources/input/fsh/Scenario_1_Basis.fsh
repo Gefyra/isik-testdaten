@@ -137,7 +137,7 @@ Usage: #example
 * category = $sct#387713003 "Surgical procedure (procedure)"
 * code.coding[+] = $ops#5-470 "Appendektomie"
   * version = "2021"
-  * text = "Entfernung des Blinddarms"
+* code.text = "Entfernung des Blinddarms"
 * subject = Reference(SC1Patient)
 * encounter = Reference(SC1Encounter1)
 * performedDateTime = "2021-02-12"
