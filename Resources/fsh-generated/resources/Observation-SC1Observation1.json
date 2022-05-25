@@ -1,0 +1,43 @@
+{
+  "resourceType": "Observation",
+  "id": "SC1Observation1",
+  "meta": {
+    "profile": [
+      "https://gematik.de/fhir/ISiK/v2/StructureDefinition/ISiKKoerpertemperatur"
+    ]
+  },
+  "category": [
+    {
+      "coding": [
+        {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "vital-signs"
+        }
+      ]
+    }
+  ],
+  "code": {
+    "coding": [
+      {
+        "system": "http://loinc.org",
+        "code": "8310-5",
+        "display": "Body temperature"
+      }
+    ],
+    "text": "Körpertemperatur"
+  },
+  "valueQuantity": {
+    "system": "http://unitsofmeasure.org",
+    "code": "Cel",
+    "value": 38.8,
+    "unit": "°C"
+  },
+  "status": "final",
+  "subject": {
+    "reference": "Patient/SC1Patient"
+  },
+  "encounter": {
+    "reference": "Encounter/SC1Encounter1"
+  },
+  "effectiveDateTime": "2021-02-12T08:00:00+01:00"
+}
