@@ -1,0 +1,11 @@
+{
+  "resourceType": "Binary",
+  "id": "SC1Binary1",
+  "meta": {
+    "profile": [
+      "https://gematik.de/fhir/ISiK/v2/StructureDefinition/ISiKBinary"
+    ]
+  },
+  "contentType": "application/pdf",
+  "data": "JVBERi0xLjUNJeLjz9MNCjEw"
+}
