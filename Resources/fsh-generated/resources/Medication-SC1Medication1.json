@@ -1,0 +1,19 @@
+{
+  "resourceType": "Medication",
+  "id": "SC1Medication1",
+  "meta": {
+    "profile": [
+      "https://gematik.de/fhir/ISiK/v2/StructureDefinition/ISiKMedikament"
+    ]
+  },
+  "code": {
+    "coding": [
+      {
+        "system": "http://fhir.de/CodeSystem/ifa/pzn",
+        "code": "07402210",
+        "display": "ASS 100 HEXAL Tabletten"
+      }
+    ]
+  },
+  "status": "active"
+}

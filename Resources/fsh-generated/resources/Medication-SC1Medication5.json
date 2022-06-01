@@ -1,0 +1,28 @@
+{
+  "resourceType": "Medication",
+  "id": "SC1Medication5",
+  "meta": {
+    "profile": [
+      "https://gematik.de/fhir/ISiK/v2/StructureDefinition/ISiKMedikament"
+    ]
+  },
+  "code": {
+    "coding": [
+      {
+        "system": "http://fhir.de/CodeSystem/bfarm/atc",
+        "code": "H03AA01",
+        "display": "Levothyroxin-Natrium"
+      }
+    ]
+  },
+  "status": "active",
+  "form": {
+    "coding": [
+      {
+        "system": "http://standardterms.edqm.eu",
+        "code": "10219000",
+        "display": "Tablette"
+      }
+    ]
+  }
+}

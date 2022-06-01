@@ -1,0 +1,19 @@
+{
+  "resourceType": "Medication",
+  "id": "SC1Medication2",
+  "meta": {
+    "profile": [
+      "https://gematik.de/fhir/ISiK/v2/StructureDefinition/ISiKMedikament"
+    ]
+  },
+  "code": {
+    "coding": [
+      {
+        "system": "http://fhir.de/CodeSystem/ifa/pzn",
+        "code": "00650241",
+        "display": "RAMIPRIL-CT 5 mg Tabletten"
+      }
+    ]
+  },
+  "status": "active"
+}

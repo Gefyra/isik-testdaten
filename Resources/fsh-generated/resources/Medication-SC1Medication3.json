@@ -1,0 +1,19 @@
+{
+  "resourceType": "Medication",
+  "id": "SC1Medication3",
+  "meta": {
+    "profile": [
+      "https://gematik.de/fhir/ISiK/v2/StructureDefinition/ISiKMedikament"
+    ]
+  },
+  "code": {
+    "coding": [
+      {
+        "system": "http://fhir.de/CodeSystem/ifa/pzn",
+        "code": "00774055",
+        "display": "TORASEMID-1A Pharma 200 mg Tabletten"
+      }
+    ]
+  },
+  "status": "active"
+}

@@ -1,0 +1,44 @@
+{
+  "resourceType": "MedicationStatement",
+  "id": "SC1MedicationStatement2",
+  "meta": {
+    "profile": [
+      "https://gematik.de/fhir/ISiK/v2/StructureDefinition/ISiKMedikationsInformation"
+    ]
+  },
+  "dosage": [
+    {
+      "doseAndRate": [
+        {
+          "doseQuantity": {
+            "system": "http://unitsofmeasure.org",
+            "value": 1,
+            "unit": "Tablette",
+            "code": "1"
+          }
+        }
+      ],
+      "timing": {
+        "repeat": {
+          "when": [
+            "MORN"
+          ]
+        }
+      }
+    }
+  ],
+  "status": "active",
+  "medicationReference": {
+    "reference": "Medication/SC1Medication2"
+  },
+  "subject": {
+    "reference": "Patient/SC1Patient"
+  },
+  "context": {
+    "reference": "Encounter/SC1Encounter1"
+  },
+  "effectivePeriod": {
+    "start": "2020-09-05"
+  },
+  "dateAsserted": "2020-09-05"
+}
