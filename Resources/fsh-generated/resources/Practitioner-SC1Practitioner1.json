@@ -1,0 +1,36 @@
+{
+  "resourceType": "Practitioner",
+  "id": "SC1Practitioner1",
+  "meta": {
+    "profile": [
+      "https://gematik.de/fhir/ISiK/v2/StructureDefinition/ISiKPersonImGesundheitsberuf"
+    ]
+  },
+  "name": [
+    {
+      "use": "official",
+      "family": "Musterarzt",
+      "given": [
+        "Manfred"
+      ],
+      "prefix": [
+        "Dr. med."
+      ]
+    }
+  ],
+  "identifier": [
+    {
+      "type": {
+        "coding": [
+          {
+            "code": "GKV",
+            "system": "http://fhir.de/CodeSystem/identifier-type-de-basis"
+          }
+        ]
+      },
+      "system": "https://fhir.krankenhaus.example/sid/personal",
+      "value": "A007"
+    }
+  ],
+  "gender": "male"
+}

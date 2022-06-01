@@ -1,0 +1,28 @@
+{
+  "resourceType": "MedicationAdministration",
+  "id": "SC1MedicationAdministration1",
+  "meta": {
+    "profile": [
+      "https://gematik.de/fhir/ISiK/v2/StructureDefinition/ISiKMedikationsVerabreichung"
+    ]
+  },
+  "dosage": {
+    "dose": {
+      "system": "http://unitsofmeasure.org",
+      "value": 1,
+      "unit": "Tablette",
+      "code": "1"
+    }
+  },
+  "status": "completed",
+  "medicationReference": {
+    "reference": "Medication/SC1Medication6"
+  },
+  "subject": {
+    "reference": "Patient/SC1Patient"
+  },
+  "context": {
+    "reference": "Encounter/SC1Encounter1"
+  },
+  "effectiveDateTime": "2021-02-12T09:12:25+01:00"
+}

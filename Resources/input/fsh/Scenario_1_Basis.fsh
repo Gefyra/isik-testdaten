@@ -142,3 +142,17 @@ Usage: #example
 * subject = Reference(SC1Patient)
 * encounter = Reference(SC1Encounter1)
 * performedDateTime = "2021-02-12"
+
+Instance: SC1Practitioner1
+InstanceOf: https://gematik.de/fhir/ISiK/v2/StructureDefinition/ISiKPersonImGesundheitsberuf
+Usage: #example
+* identifier[0]
+  * type = $identifier-type-de-basis#GKV
+  * system = "https://fhir.krankenhaus.example/sid/personal"
+  * value = "A007"
+* name
+  * use = #official
+  * family = "Musterarzt"
+  * given = "Manfred"
+  * prefix = "Dr. med."
+* gender = #male

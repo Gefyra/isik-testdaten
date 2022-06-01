@@ -1,0 +1,61 @@
+{
+  "resourceType": "MedicationRequest",
+  "id": "SC1MedicationRequest2",
+  "meta": {
+    "profile": [
+      "https://gematik.de/fhir/ISiK/v2/StructureDefinition/ISiKMedikationsVerordnung"
+    ]
+  },
+  "dosageInstruction": [
+    {
+      "doseAndRate": [
+        {
+          "doseQuantity": {
+            "system": "http://unitsofmeasure.org",
+            "value": 1,
+            "unit": "Tablette",
+            "code": "1"
+          }
+        }
+      ],
+      "maxDosePerPeriod": {
+        "numerator": {
+          "system": "http://unitsofmeasure.org",
+          "value": 4,
+          "unit": "Tablette",
+          "code": "1"
+        },
+        "denominator": {
+          "system": "http://unitsofmeasure.org",
+          "value": 1,
+          "unit": "Tag",
+          "code": "d"
+        }
+      },
+      "asNeededBoolean": true
+    }
+  ],
+  "status": "active",
+  "intent": "order",
+  "medicationReference": {
+    "reference": "Medication/SC1Medication7"
+  },
+  "subject": {
+    "reference": "Patient/SC1Patient"
+  },
+  "encounter": {
+    "reference": "Encounter/SC1Encounter1"
+  },
+  "authoredOn": "2021-02-12",
+  "requester": {
+    "reference": "Practitioner/SC1Practitioner1"
+  },
+  "reasonReference": [
+    {
+      "reference": "Condition/SC1Condition3"
+    }
+  ],
+  "substitution": {
+    "allowedBoolean": true
+  }
+}

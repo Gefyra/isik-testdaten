@@ -1,0 +1,65 @@
+{
+  "resourceType": "Medication",
+  "id": "SC1Medication6",
+  "meta": {
+    "profile": [
+      "https://gematik.de/fhir/ISiK/v2/StructureDefinition/ISiKMedikament"
+    ]
+  },
+  "ingredient": [
+    {
+      "strength": {
+        "numerator": {
+          "system": "http://unitsofmeasure.org",
+          "value": 875,
+          "unit": "mg",
+          "code": "mg"
+        }
+      },
+      "itemCodeableConcept": {
+        "coding": [
+          {
+            "system": "http://fhir.de/CodeSystem/bfarm/atc",
+            "code": "J01CA04",
+            "display": "Amoxicillin"
+          }
+        ]
+      },
+      "isActive": true
+    },
+    {
+      "strength": {
+        "numerator": {
+          "system": "http://unitsofmeasure.org",
+          "value": 125,
+          "unit": "mg",
+          "code": "mg"
+        }
+      },
+      "itemCodeableConcept": {
+        "text": "Clavulansäure"
+      },
+      "isActive": true
+    }
+  ],
+  "code": {
+    "coding": [
+      {
+        "system": "http://fhir.de/CodeSystem/bfarm/atc",
+        "code": "J01CR02",
+        "display": "Amoxicillin und Beta-Lactamase-Inhibitoren"
+      }
+    ],
+    "text": "Amoxicillin plus Clavulansäure"
+  },
+  "status": "active",
+  "form": {
+    "coding": [
+      {
+        "system": "http://standardterms.edqm.eu",
+        "code": "10219000",
+        "display": "Tablette"
+      }
+    ]
+  }
+}
