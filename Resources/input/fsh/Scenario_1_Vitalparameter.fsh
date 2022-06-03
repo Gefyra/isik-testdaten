@@ -44,6 +44,8 @@ InstanceOf: https://gematik.de/fhir/ISiK/v2/StructureDefinition/ISiKKoerpertempe
 * effectiveDateTime = "2021-02-15T08:00:00+01:00"
 * valueQuantity = 36.4 'Cel' "°C"
 
+// Atemfrequenz von Sport zu ruhend
+
 Instance: SC1Observation5
 InstanceOf: "https://gematik.de/fhir/ISiK/v2/StructureDefinition/ISiKAtemfrequenz"
 Usage: #example
@@ -55,10 +57,10 @@ Usage: #example
 * code = $loinc#9279-1 "Respiratory rate"
 * code.text = "Atemfrequenz"
 * subject = Reference(SC1Patient)
-* effectiveDateTime = "2022-06-03T12:11:14Z"
-* valueQuantity = 30 '/min' "Atemzüge pro Minute"
+* effectiveDateTime = "2021-02-15T08:00:00+01:00"
+* valueQuantity = 50 '/min' "Atemzüge pro Minute"
 
-Instance: SC1Observation
+Instance: SC1Observation6
 InstanceOf: "https://gematik.de/fhir/ISiK/v2/StructureDefinition/ISiKAtemfrequenz"
 Usage: #example
 * meta.profile[0] = "http://hl7.org/fhir/StructureDefinition/resprate"
@@ -69,10 +71,38 @@ Usage: #example
 * code = $loinc#9279-1 "Respiratory rate"
 * code.text = "Atemfrequenz"
 * subject = Reference(SC1Patient)
-* effectiveDateTime = "2022-06-03T13:11:02Z"
+* effectiveDateTime = "2021-02-15T08:01:00+01:00"
+* valueQuantity = 51 '/min' "Atemzüge pro Minute"
+
+Instance: SC1Observation7
+InstanceOf: "https://gematik.de/fhir/ISiK/v2/StructureDefinition/ISiKAtemfrequenz"
+Usage: #example
+* meta.profile[0] = "http://hl7.org/fhir/StructureDefinition/resprate"
+* meta.profile[+] = "http://fhir.de/StructureDefinition/observation-de-vitalsign-atemfrequenz"
+* status = #final
+* category = $observation-category#vital-signs "Vital Signs"
+* category.text = "Vital Signs"
+* code = $loinc#9279-1 "Respiratory rate"
+* code.text = "Atemfrequenz"
+* subject = Reference(SC1Patient)
+* effectiveDateTime = "2021-02-15T08:02:00+01:00"
+* valueQuantity = 54 '/min' "Atemzüge pro Minute"
+
+Instance: SC1Observation8
+InstanceOf: "https://gematik.de/fhir/ISiK/v2/StructureDefinition/ISiKAtemfrequenz"
+Usage: #example
+* meta.profile[0] = "http://hl7.org/fhir/StructureDefinition/resprate"
+* meta.profile[+] = "http://fhir.de/StructureDefinition/observation-de-vitalsign-atemfrequenz"
+* status = #final
+* category = $observation-category#vital-signs "Vital Signs"
+* category.text = "Vital Signs"
+* code = $loinc#9279-1 "Respiratory rate"
+* code.text = "Atemfrequenz"
+* subject = Reference(SC1Patient)
+* effectiveDateTime = "2021-02-15T09:00:00+01:00"
 * valueQuantity = 20 '/min' "Atemzüge pro Minute"
 
-Instance: SC1Observation
+Instance: SC1Observation9
 InstanceOf: "https://gematik.de/fhir/ISiK/v2/StructureDefinition/ISiKAtemfrequenz"
 Usage: #example
 * meta.profile[0] = "http://hl7.org/fhir/StructureDefinition/resprate"
@@ -83,10 +113,12 @@ Usage: #example
 * code = $loinc#9279-1 "Respiratory rate"
 * code.text = "Atemfrequenz"
 * subject = Reference(SC1Patient)
-* effectiveDateTime = "2022-06-03T13:12:01Z"
-* valueQuantity = 19 '/min' "Atemzüge pro Minute"
+* effectiveDateTime = "2021-02-15T09:01:00+01:00"
+* valueQuantity = 20 '/min' "Atemzüge pro Minute"
 
-Instance: SC1Observation
+// Niedriger Blutdruck
+
+Instance: SC1Observation10
 InstanceOf: "https://gematik.de/fhir/ISiK/v2/StructureDefinition/ISiKBlutdruck"
 Usage: #example
 * meta.profile[0] = "http://fhir.de/StructureDefinition/observation-de-vitalsign-blutdruck"
@@ -95,7 +127,7 @@ Usage: #example
 * code = $loinc#85354-9 "Blood pressure panel with all children optional"
 * code.text = "Systolischer und Diastolischer Blutdruck"
 * subject = Reference(SC1Patient)
-* effectiveDateTime = "2012-09-17"
+* effectiveDateTime = "2021-02-15T20:00:00+01:00"
 * performer.reference = "Practitioner/example"
 * interpretation = $v3-ObservationInterpretation#L "low"
 * interpretation.text = "Below low normal"
@@ -103,7 +135,9 @@ Usage: #example
 * component[+].valueQuantity = 107 'mm[Hg]' "mmHg"
 * component[+].valueQuantity = 60 'mm[Hg]' "mmHg"
 
-Instance: SC1Observation
+// Normaler Blutdruck
+
+Instance: SC1Observation11
 InstanceOf: "https://gematik.de/fhir/ISiK/v2/StructureDefinition/ISiKBlutdruck"
 Usage: #example
 * meta.profile[0] = "http://fhir.de/StructureDefinition/observation-de-vitalsign-blutdruck"
@@ -112,15 +146,17 @@ Usage: #example
 * code = $loinc#85354-9 "Blood pressure panel with all children optional"
 * code.text = "Systolischer und Diastolischer Blutdruck"
 * subject = Reference(SC1Patient)
-* effectiveDateTime = "2012-09-17"
+* effectiveDateTime = "2021-02-15T21:00:00+01:00"
 * performer.reference = "Practitioner/example"
 * interpretation = $v3-ObservationInterpretation#L "low"
 * interpretation.text = "Below low normal"
 * bodySite = $sct#368209003 "Right arm"
-* component[+].valueQuantity = 107 'mm[Hg]' "mmHg"
-* component[+].valueQuantity = 60 'mm[Hg]' "mmHg"
+* component[+].valueQuantity = 130 'mm[Hg]' "mmHg"
+* component[+].valueQuantity = 85 'mm[Hg]' "mmHg"
 
-Instance: SC1Observation
+// Hoher Blutdruck
+
+Instance: SC1Observation12
 InstanceOf: "https://gematik.de/fhir/ISiK/v2/StructureDefinition/ISiKBlutdruck"
 Usage: #example
 * meta.profile[0] = "http://fhir.de/StructureDefinition/observation-de-vitalsign-blutdruck"
@@ -129,13 +165,15 @@ Usage: #example
 * code = $loinc#85354-9 "Blood pressure panel with all children optional"
 * code.text = "Systolischer und Diastolischer Blutdruck"
 * subject = Reference(SC1Patient)
-* effectiveDateTime = "2012-09-17"
+* effectiveDateTime = "2021-02-15T08:00:00+01:00"
 * performer.reference = "Practitioner/example"
 * interpretation = $v3-ObservationInterpretation#L "low"
 * interpretation.text = "Below low normal"
 * bodySite = $sct#368209003 "Right arm"
-* component[+].valueQuantity = 107 'mm[Hg]' "mmHg"
-* component[+].valueQuantity = 60 'mm[Hg]' "mmHg"
+* component[+].valueQuantity = 140 'mm[Hg]' "mmHg"
+* component[+].valueQuantity = 90 'mm[Hg]' "mmHg"
+
+// EKG Daten
 
 Instance: SC1Observation
 InstanceOf: "https://gematik.de/fhir/ISiK/v2/StructureDefinition/ISiKEkg"
