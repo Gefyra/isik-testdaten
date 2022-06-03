@@ -1,11 +1,11 @@
 {
   "resourceType": "Observation",
-  "id": "ISiKKopfumfangExample",
+  "id": "ISiKAtemfrequenz3",
   "meta": {
     "profile": [
-      "http://hl7.org/fhir/StructureDefinition/headcircum",
-      "http://fhir.de/StructureDefinition/observation-de-vitalsign-kopfumfang",
-      "https://gematik.de/fhir/ISiK/v2/StructureDefinition/ISiKKopfumfang"
+      "http://hl7.org/fhir/StructureDefinition/resprate",
+      "http://fhir.de/StructureDefinition/observation-de-vitalsign-atemfrequenz",
+      "https://gematik.de/fhir/ISiK/v2/StructureDefinition/ISiKAtemfrequenz"
     ]
   },
   "category": [
@@ -24,21 +24,21 @@
     "coding": [
       {
         "system": "http://loinc.org",
-        "code": "9843-4",
-        "display": "Head Occipital-frontal circumference"
+        "code": "9279-1",
+        "display": "Respiratory rate"
       }
     ],
-    "text": "Kopfumfang"
+    "text": "Atemfrequenz"
   },
   "valueQuantity": {
     "system": "http://unitsofmeasure.org",
-    "value": 38,
-    "code": "cm",
-    "unit": "Centimeter"
+    "code": "/min",
+    "value": 19,
+    "unit": "Atemzüge pro Minute"
   },
   "status": "final",
   "subject": {
     "reference": "Patient/SC1Patient"
   },
-  "effectiveDateTime": "2019-07-02"
+  "effectiveDateTime": "2022-06-03T13:12:01Z"
 }

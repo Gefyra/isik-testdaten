@@ -93,7 +93,7 @@
   ],
   "status": "final",
   "subject": {
-    "reference": "PatientinMusterfrau"
+    "reference": "Patient/SC1Patient"
   },
   "effectiveDateTime": "2020-10-11"
 }

@@ -1,6 +1,6 @@
 {
   "resourceType": "Observation",
-  "id": "ISiKAtemfrequenzExample",
+  "id": "ISiKAtemfrequenz1",
   "meta": {
     "profile": [
       "http://hl7.org/fhir/StructureDefinition/resprate",
@@ -33,12 +33,12 @@
   "valueQuantity": {
     "system": "http://unitsofmeasure.org",
     "code": "/min",
-    "value": 26,
+    "value": 30,
     "unit": "Atemzüge pro Minute"
   },
   "status": "final",
   "subject": {
-    "reference": "PatientinMusterfrau"
+    "reference": "Patient/SC1Patient"
   },
-  "effectiveDateTime": "2019-07-02"
+  "effectiveDateTime": "2022-06-03T12:11:14Z"
 }

@@ -1,4 +1,4 @@
-Instance: ISiKAtemfrequenzExample
+Instance: ISiKAtemfrequenz1
 InstanceOf: ISiKAtemfrequenz
 Usage: #example
 * meta.profile[0] = "http://hl7.org/fhir/StructureDefinition/resprate"
@@ -9,9 +9,39 @@ Usage: #example
 * category.text = "Vital Signs"
 * code = $loinc#9279-1 "Respiratory rate"
 * code.text = "Atemfrequenz"
-* subject = Reference(PatientinMusterfrau)
-* effectiveDateTime = "2019-07-02"
-* valueQuantity = 26 '/min' "Atemzüge pro Minute"
+* subject = Reference(SC1Patient)
+* effectiveDateTime = "2022-06-03T12:11:14Z"
+* valueQuantity = 30 '/min' "Atemzüge pro Minute"
+
+Instance: ISiKAtemfrequenz2
+InstanceOf: ISiKAtemfrequenz
+Usage: #example
+* meta.profile[0] = "http://hl7.org/fhir/StructureDefinition/resprate"
+* meta.profile[+] = "http://fhir.de/StructureDefinition/observation-de-vitalsign-atemfrequenz"
+* meta.profile[+] = "https://gematik.de/fhir/ISiK/v2/StructureDefinition/ISiKAtemfrequenz"
+* status = #final
+* category = $observation-category#vital-signs "Vital Signs"
+* category.text = "Vital Signs"
+* code = $loinc#9279-1 "Respiratory rate"
+* code.text = "Atemfrequenz"
+* subject = Reference(SC1Patient)
+* effectiveDateTime = "2022-06-03T13:11:02Z"
+* valueQuantity = 20 '/min' "Atemzüge pro Minute"
+
+Instance: ISiKAtemfrequenz3
+InstanceOf: ISiKAtemfrequenz
+Usage: #example
+* meta.profile[0] = "http://hl7.org/fhir/StructureDefinition/resprate"
+* meta.profile[+] = "http://fhir.de/StructureDefinition/observation-de-vitalsign-atemfrequenz"
+* meta.profile[+] = "https://gematik.de/fhir/ISiK/v2/StructureDefinition/ISiKAtemfrequenz"
+* status = #final
+* category = $observation-category#vital-signs "Vital Signs"
+* category.text = "Vital Signs"
+* code = $loinc#9279-1 "Respiratory rate"
+* code.text = "Atemfrequenz"
+* subject = Reference(SC1Patient)
+* effectiveDateTime = "2022-06-03T13:12:01Z"
+* valueQuantity = 19 '/min' "Atemzüge pro Minute"
 
 Instance: ISiKBlutdruckExample
 InstanceOf: ISiKBlutdruck
@@ -22,7 +52,7 @@ Usage: #example
 * category = $observation-category#vital-signs "Vital Signs"
 * code = $loinc#85354-9 "Blood pressure panel with all children optional"
 * code.text = "Systolischer und Diastolischer Blutdruck"
-* subject = Reference(PatientinMusterfrau)
+* subject = Reference(SC1Patient)
 * effectiveDateTime = "2012-09-17"
 * performer.reference = "Practitioner/example"
 * interpretation = $v3-ObservationInterpretation#L "low"
@@ -36,10 +66,10 @@ InstanceOf: ISiKEkg
 Usage: #example
 * meta.profile[0] = "http://fhir.de/StructureDefinition/observation-de-ekg"
 * meta.profile[+] = "https://gematik.de/fhir/ISiK/v2/StructureDefinition/ISiKEkg"
-* subject = Reference(PatientinMusterfrau)
+* subject = Reference(SC1Patient)
 * status = #final
 * category = $observation-category#procedure
-* device = Reference(ExampleDevice)
+* device = Reference(Device/example)
 * effectiveDateTime = "2019-07-02"
 * code.coding[0] = $loinc#LP6244-0 "Electrocardiogram (EKG)"
 * component[0].code.coding[0] = $loinc#LP7386-8 "Lead I"
@@ -66,7 +96,7 @@ Usage: #example
 * code = $loinc#9269-2 "Glasgow coma score total"
 * valueQuantity = 11 '1' "Punktwert"
 * status = #final
-* subject = Reference(PatientinMusterfrau)
+* subject = Reference(SC1Patient)
 * effectiveDateTime = "2020-10-11"
 * component[Verbal].valueQuantity = 4 '1' "Punktwert"
 * component[Motor].valueQuantity = 4 '1' "Punktwert"
@@ -83,7 +113,7 @@ Usage: #example
 * code.coding[0] = $loinc#8867-4 "Heart rate"
 * code.coding[+] = $sct#364075005 "Heart rate (observable entity)"
 * code.text = "Herzfrequenz"
-* subject = Reference(PatientinMusterfrau)
+* subject = Reference(SC1Patient)
 * effectiveDateTime = "2020-10-11"
 * valueQuantity = 63 '/min' "per minute"
 
@@ -98,7 +128,7 @@ Usage: #example
 * code.coding[0] = $loinc#29463-7 "Body weight"
 * code.coding[+] = $sct#27113001 "Body weight"
 * code.text = "Körpergewicht"
-* subject = Reference(PatientinMusterfrau)
+* subject = Reference(SC1Patient)
 * effectiveDateTime = "2020-10-11"
 * valueQuantity = 79 'kg' "kilogram"
 
@@ -113,7 +143,7 @@ Usage: #example
 * code.coding[0] = $loinc#8302-2 "Body height"
 * code.coding[+] = $sct#50373000 "Body height measure"
 * code.text = "Körpergröße"
-* subject = Reference(PatientinMusterfrau)
+* subject = Reference(SC1Patient)
 * effectiveDateTime = "2020-10-11"
 * valueQuantity = 174 'cm' "centimeter"
 
@@ -128,7 +158,7 @@ Usage: #example
 * code.coding[0] = $loinc#8310-5 "Body temperature"
 * code.coding[+] = $sct#386725007 "Body temperature (observable entity)"
 * code.text = "Körpertemperatur"
-* subject = Reference(PatientinMusterfrau)
+* subject = Reference(SC1Patient)
 * effectiveDateTime = "2020-10-11"
 * valueQuantity = 36.8 'Cel' "°C"
 
@@ -143,7 +173,7 @@ Usage: #example
 * category.text = "Vital Signs"
 * code = $loinc#9843-4 "Head Occipital-frontal circumference"
 * code.text = "Kopfumfang"
-* subject = Reference(PatientinMusterfrau)
+* subject = Reference(SC1Patient)
 * effectiveDateTime = "2019-07-02"
 * valueQuantity = 38 'cm' "Centimeter"
 
@@ -158,7 +188,7 @@ Usage: #example
 * code.coding[+] = $sct#442476006 "Arterial oxygen saturation"
 * code.coding[+] = $loinc#59408-5 "Oxygen saturation in Arterial blood by Pulse oximetry"
 * code.text = "Pulsoximetrische Sauerstoffsättigung"
-* subject = Reference(PatientinMusterfrau)
+* subject = Reference(SC1Patient)
 * effectiveDateTime = "2020-10-11"
 * valueQuantity = 98 '%' "%"
 * component[0].code.coding[0] = $loinc#3151-8 "Inhaled oxygen flow rate"
