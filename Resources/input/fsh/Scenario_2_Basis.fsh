@@ -32,7 +32,7 @@ Usage: #example
 * status = #finished
 * class = $v3-ActCode#IMP
 * type[0] = $kontaktart-de#normalstationaer
-* type[+] = $Kontaktebene#versorgungsstellenkontakt
+* type[+] = $Kontaktebene#abteilungskontakt
 * subject = Reference(SC2Patient)
 * period.start = "2021-03-12"
 * period.end = "2021-03-15"
@@ -74,7 +74,7 @@ Usage: #example
 * status = #finished
 * class = $v3-ActCode#AMB
 * type[0] = $kontaktart-de#nachstationaer
-* type[+] = $Kontaktebene#versorgungsstellenkontakt
+* type[+] = $Kontaktebene#abteilungskontakt
 * subject = Reference(SC2Patient)
 * period.start = "2021-03-20"
 * period.end = "2021-03-20"
