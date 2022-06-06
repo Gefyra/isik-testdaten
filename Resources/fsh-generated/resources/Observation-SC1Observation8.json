@@ -1,11 +1,11 @@
 {
   "resourceType": "Observation",
-  "id": "ISiKAtemfrequenz1",
+  "id": "SC1Observation8",
   "meta": {
     "profile": [
+      "https://gematik.de/fhir/ISiK/v2/StructureDefinition/ISiKAtemfrequenz",
       "http://hl7.org/fhir/StructureDefinition/resprate",
-      "http://fhir.de/StructureDefinition/observation-de-vitalsign-atemfrequenz",
-      "https://gematik.de/fhir/ISiK/v2/StructureDefinition/ISiKAtemfrequenz"
+      "http://fhir.de/StructureDefinition/observation-de-vitalsign-atemfrequenz"
     ]
   },
   "category": [
@@ -33,12 +33,12 @@
   "valueQuantity": {
     "system": "http://unitsofmeasure.org",
     "code": "/min",
-    "value": 30,
+    "value": 20,
     "unit": "Atemzüge pro Minute"
   },
   "status": "final",
   "subject": {
     "reference": "Patient/SC1Patient"
   },
-  "effectiveDateTime": "2022-06-03T12:11:14Z"
+  "effectiveDateTime": "2021-02-15T09:00:00+01:00"
 }

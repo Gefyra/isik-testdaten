@@ -1,11 +1,11 @@
 {
   "resourceType": "Observation",
-  "id": "ISiKAtemfrequenz2",
+  "id": "SC1Observation9",
   "meta": {
     "profile": [
+      "https://gematik.de/fhir/ISiK/v2/StructureDefinition/ISiKAtemfrequenz",
       "http://hl7.org/fhir/StructureDefinition/resprate",
-      "http://fhir.de/StructureDefinition/observation-de-vitalsign-atemfrequenz",
-      "https://gematik.de/fhir/ISiK/v2/StructureDefinition/ISiKAtemfrequenz"
+      "http://fhir.de/StructureDefinition/observation-de-vitalsign-atemfrequenz"
     ]
   },
   "category": [
@@ -40,5 +40,5 @@
   "subject": {
     "reference": "Patient/SC1Patient"
   },
-  "effectiveDateTime": "2022-06-03T13:11:02Z"
+  "effectiveDateTime": "2021-02-15T09:01:00+01:00"
 }

@@ -1,10 +1,10 @@
 {
   "resourceType": "Observation",
-  "id": "ISiKBlutdruckExample",
+  "id": "SC1Observation12",
   "meta": {
     "profile": [
-      "http://fhir.de/StructureDefinition/observation-de-vitalsign-blutdruck",
-      "https://gematik.de/fhir/ISiK/v2/StructureDefinition/ISiKBlutdruck"
+      "https://gematik.de/fhir/ISiK/v2/StructureDefinition/ISiKBlutdruck",
+      "http://fhir.de/StructureDefinition/observation-de-vitalsign-blutdruck"
     ]
   },
   "category": [
@@ -44,7 +44,7 @@
       },
       "valueQuantity": {
         "system": "http://unitsofmeasure.org",
-        "value": 107,
+        "value": 140,
         "code": "mm[Hg]",
         "unit": "mmHg"
       }
@@ -64,7 +64,7 @@
       },
       "valueQuantity": {
         "system": "http://unitsofmeasure.org",
-        "value": 60,
+        "value": 90,
         "code": "mm[Hg]",
         "unit": "mmHg"
       }
@@ -74,7 +74,7 @@
   "subject": {
     "reference": "Patient/SC1Patient"
   },
-  "effectiveDateTime": "2012-09-17",
+  "effectiveDateTime": "2021-02-15T08:00:00+01:00",
   "performer": [
     {
       "reference": "Practitioner/example"

@@ -1,11 +1,11 @@
 {
   "resourceType": "Observation",
-  "id": "ISiKHerzfrequenzExample",
+  "id": "SC1Observation14",
   "meta": {
     "profile": [
+      "https://gematik.de/fhir/ISiK/v2/StructureDefinition/ISiKHerzfrequenz",
       "http://hl7.org/fhir/StructureDefinition/heartrate",
-      "http://fhir.de/StructureDefinition/observation-de-vitalsign-herzfrequenz",
-      "https://gematik.de/fhir/ISiK/v2/StructureDefinition/ISiKHerzfrequenz"
+      "http://fhir.de/StructureDefinition/observation-de-vitalsign-herzfrequenz"
     ]
   },
   "category": [
@@ -36,12 +36,12 @@
   "valueQuantity": {
     "system": "http://unitsofmeasure.org",
     "code": "/min",
-    "value": 63,
+    "value": 150,
     "unit": "per minute"
   },
   "status": "final",
   "subject": {
     "reference": "Patient/SC1Patient"
   },
-  "effectiveDateTime": "2020-10-11"
+  "effectiveDateTime": "2021-02-15T08:01:00+01:00"
 }

@@ -1,10 +1,10 @@
 {
   "resourceType": "Observation",
-  "id": "ISiKSauerstoffsaettigungExample",
+  "id": "SC1Observation20",
   "meta": {
     "profile": [
-      "http://fhir.de/StructureDefinition/observation-de-vitalsign-sauerstoffsaettigung",
-      "https://gematik.de/fhir/ISiK/v2/StructureDefinition/ISiKSauerstoffsaettigung"
+      "https://gematik.de/fhir/ISiK/v2/StructureDefinition/ISiKSauerstoffsaettigung",
+      "http://fhir.de/StructureDefinition/observation-de-vitalsign-sauerstoffsaettigung"
     ]
   },
   "category": [
@@ -95,5 +95,5 @@
   "subject": {
     "reference": "Patient/SC1Patient"
   },
-  "effectiveDateTime": "2020-10-11"
+  "effectiveDateTime": "2021-02-15T07:00:00+01:00"
 }

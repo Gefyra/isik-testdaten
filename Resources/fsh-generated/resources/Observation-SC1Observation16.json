@@ -1,11 +1,11 @@
 {
   "resourceType": "Observation",
-  "id": "ISiKKoerpergroesseExample",
+  "id": "SC1Observation16",
   "meta": {
     "profile": [
-      "http://hl7.org/fhir/StructureDefinition/bodyheight",
-      "http://fhir.de/StructureDefinition/observation-de-vitalsign-koerpergroesse",
-      "https://gematik.de/fhir/ISiK/v2/StructureDefinition/ISiKKoerpergroesse"
+      "https://gematik.de/fhir/ISiK/v2/StructureDefinition/ISiKKoerpergewicht",
+      "http://hl7.org/fhir/StructureDefinition/bodyweight",
+      "http://fhir.de/StructureDefinition/observation-de-vitalsign-koerpergewicht"
     ]
   },
   "category": [
@@ -20,28 +20,28 @@
   ],
   "valueQuantity": {
     "system": "http://unitsofmeasure.org",
-    "value": 174,
-    "code": "cm",
-    "unit": "centimeter"
+    "value": 58,
+    "code": "kg",
+    "unit": "kilogram"
   },
   "status": "final",
   "code": {
     "coding": [
       {
-        "code": "8302-2",
+        "code": "29463-7",
         "system": "http://loinc.org",
-        "display": "Body height"
+        "display": "Body weight"
       },
       {
-        "code": "50373000",
+        "code": "27113001",
         "system": "http://snomed.info/sct",
-        "display": "Body height measure"
+        "display": "Body weight"
       }
     ],
-    "text": "Körpergröße"
+    "text": "Körpergewicht"
   },
   "subject": {
     "reference": "Patient/SC1Patient"
   },
-  "effectiveDateTime": "2020-10-11"
+  "effectiveDateTime": "2021-02-15T07:00:00+01:00"
 }

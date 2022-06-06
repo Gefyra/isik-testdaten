@@ -1,10 +1,10 @@
 {
   "resourceType": "Observation",
-  "id": "ISiKGCSExample",
+  "id": "SC1Observation21",
   "meta": {
     "profile": [
-      "http://fhir.de/StructureDefinition/observation-de-vitalsign-gcs",
-      "https://gematik.de/fhir/ISiK/v2/StructureDefinition/ISiKGCS"
+      "https://gematik.de/fhir/ISiK/v2/StructureDefinition/ISiKGCS",
+      "http://fhir.de/StructureDefinition/observation-de-vitalsign-gcs"
     ]
   },
   "category": [
@@ -20,7 +20,7 @@
   "valueQuantity": {
     "system": "http://unitsofmeasure.org",
     "code": "1",
-    "value": 11,
+    "value": 15,
     "unit": "Punktwert"
   },
   "code": {
@@ -48,7 +48,7 @@
       },
       "valueQuantity": {
         "system": "http://unitsofmeasure.org",
-        "value": 3,
+        "value": 4,
         "code": "1",
         "unit": "Punktwert"
       }
@@ -68,7 +68,7 @@
       },
       "valueQuantity": {
         "system": "http://unitsofmeasure.org",
-        "value": 4,
+        "value": 6,
         "code": "1",
         "unit": "Punktwert"
       }
@@ -88,7 +88,7 @@
       },
       "valueQuantity": {
         "system": "http://unitsofmeasure.org",
-        "value": 4,
+        "value": 5,
         "code": "1",
         "unit": "Punktwert"
       }
@@ -98,5 +98,5 @@
   "subject": {
     "reference": "Patient/SC1Patient"
   },
-  "effectiveDateTime": "2020-10-11"
+  "effectiveDateTime": "2021-02-16T08:00:00+01:00"
 }
