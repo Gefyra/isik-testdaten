@@ -53,3 +53,4 @@ Alias: $cs-pzn = http://fhir.de/CodeSystem/ifa/pzn
 Alias: $cs-ucum = http://unitsofmeasure.org
 Alias: $cs-wg14 = http://fhir.de/CodeSystem/abdata/wg14
 Alias: $ext-mii-wirkstofftyp = https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/wirkstofftyp
+Alias: $appointmentStatus = http://hl7.org/fhir/appointmentstatus

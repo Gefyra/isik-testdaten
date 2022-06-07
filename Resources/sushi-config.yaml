@@ -16,6 +16,7 @@ dependencies:
   de.gematik.isik-vitalwerte: 2.0.0-ballot
   de.gematik.isik-basismodul-dokumentenaustausch: 2.0.0-ballot
   de.gematik.isik-medikation: 2.0.0-ballot
+  de.gematik.isik-terminplanung: 2.0.0-ballot3
   hl7.fhir.r4.core: 4.0.1
   hl7.fhir.extensions.r5: 4.0.1
   dvmd.kdl.r4.2021: 2021.1.1

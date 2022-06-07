@@ -11,6 +11,7 @@
     "dvmd.kdl.r4.2021": "2021.1.1",
     "de.gematik.isik-vitalwerte": "latest",
     "de.gematik.isik-basismodul-dokumentenaustausch": "latest",
-    "de.gematik.isik-medikation": "latest"
+    "de.gematik.isik-medikation": "latest",
+    "de.gematik.isik-terminplanung": "latest"
   }
 }
