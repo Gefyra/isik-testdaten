@@ -7,11 +7,11 @@
   "dependencies": {
     "de.basisprofil.r4": "1.3.2",
     "ihe.mhd.fhir": "4.0.1",
-    "de.gematik.isik-basismodul": "latest",
+    "de.gematik.isik-basismodul": "current",
     "dvmd.kdl.r4.2021": "2021.1.1",
-    "de.gematik.isik-vitalwerte": "latest",
-    "de.gematik.isik-basismodul-dokumentenaustausch": "latest",
-    "de.gematik.isik-medikation": "latest",
-    "de.gematik.isik-terminplanung": "latest"
+    "de.gematik.isik-vitalwerte": "current",
+    "de.gematik.isik-basismodul-dokumentenaustausch": "current",
+    "de.gematik.isik-medikation": "current",
+    "de.gematik.isik-terminplanung": "2.0.0-ballot3"
   }
 }
