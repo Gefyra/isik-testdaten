@@ -1,10 +1,12 @@
 canonical: https://gematik.de/fhir/ISiK/v2/testdaten
 fhirVersion: 4.0.1
-FSHOnly: true
+#FSHOnly: true
 #applyExtensionMetadataToRoot: false
-#id: Implementierungsleitfaden ISiK-Basismodul Stufe 2 2.0.0
+id: ExamplesISIKBasis
 name: Testdaten ISIK Stufe 2 2.0.0
 status: active
+copyrightYear: 2022
+releaseLabel: ci-build
 #version: "2.0.0"
 #publisher:
 #  name: Gematik GmbH
@@ -17,6 +19,7 @@ dependencies:
   de.gematik.isik-basismodul-dokumentenaustausch: 2.0.0-ballot
   de.gematik.isik-medikation: 2.0.0-ballot
   de.gematik.isik-terminplanung: 2.0.0-ballot3
+  de.gematik.isip: 1.0.0-ballot
   hl7.fhir.r4.core: 4.0.1
   hl7.fhir.extensions.r5: 4.0.1
   dvmd.kdl.r4.2021: 2021.1.1
