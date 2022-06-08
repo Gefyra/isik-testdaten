@@ -53,3 +53,15 @@ Alias: $cs-pzn = http://fhir.de/CodeSystem/ifa/pzn
 Alias: $cs-ucum = http://unitsofmeasure.org
 Alias: $cs-wg14 = http://fhir.de/CodeSystem/abdata/wg14
 Alias: $ext-mii-wirkstofftyp = https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/wirkstofftyp
+Alias: $appointmentStatus = http://hl7.org/fhir/appointmentstatus
+
+//ISIP
+Alias: $bcp47 = http://tools.ietf.org/html/bcp47
+Alias: $telematik-id-system = https://gematik.de/fhir/sid/telematik-id
+Alias: ContactPointSystem = http://hl7.org/fhir/contact-point-system
+Alias: AddressDeBasis = http://fhir.de/StructureDefinition/address-de-basis
+Alias: MaritalStatus = http://terminology.hl7.org/CodeSystem/v3-MaritalStatus
+Alias: EncounterPflegeArten = https://gematik.de/fhir/ISiP/CodeSystem/EncounterPflegeArten
+Alias: Facharzttitel = urn:oid:1.2.276.0.76.5.514
+Alias: SCT = http://snomed.info/sct
+Alias: KontaktPersonRolle = https://terminology.hl7.org/3.1.0/CodeSystem-v2-0063.html

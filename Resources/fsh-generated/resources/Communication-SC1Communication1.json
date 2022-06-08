@@ -1,0 +1,24 @@
+{
+  "resourceType": "Communication",
+  "id": "SC1Communication1",
+  "meta": {
+    "profile": [
+      "https://gematik.de/fhir/ISiK/v2/StructureDefinition/ISiKNachricht"
+    ]
+  },
+  "status": "completed",
+  "subject": {
+    "reference": "Patient/SC1Patient"
+  },
+  "recipient": [
+    {
+      "reference": "Practitioner/SC1Practitioner1",
+      "display": "Dr. med. Manfred Musterarzt"
+    }
+  ],
+  "payload": [
+    {
+      "contentString": "Mein Hausarzt schickt mich zu Ihnen"
+    }
+  ]
+}

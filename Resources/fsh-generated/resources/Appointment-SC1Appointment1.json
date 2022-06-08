@@ -1,0 +1,76 @@
+{
+  "resourceType": "Appointment",
+  "id": "SC1Appointment1",
+  "meta": {
+    "tag": [
+      {
+        "code": "external",
+        "system": "http://fhir.de/CodeSystem/common-meta-tag-de"
+      }
+    ],
+    "profile": [
+      "https://gematik.de/fhir/ISiK/v2/StructureDefinition/ISiKTermin"
+    ]
+  },
+  "extension": [
+    {
+      "url": "https://gematik.de/fhir/ISiK/v2/StructureDefinition/ISiKNachrichtExtension",
+      "valueReference": {
+        "reference": "Communication/SC1Communication1"
+      }
+    }
+  ],
+  "status": "proposed",
+  "start": "2021-01-29T09:00:00+01:00",
+  "end": "2021-01-29T10:00:00+01:00",
+  "slot": [
+    {
+      "reference": "Slot/SC1Slot2"
+    }
+  ],
+  "comment": "OP-Vorbesprechung Appendektomie",
+  "serviceType": [
+    {
+      "coding": [
+        {
+          "code": "221",
+          "system": "http://terminology.hl7.org/CodeSystem/service-type"
+        }
+      ]
+    }
+  ],
+  "specialty": [
+    {
+      "coding": [
+        {
+          "code": "514",
+          "system": "urn:oid:1.2.276.0.76.5.114"
+        }
+      ]
+    }
+  ],
+  "participant": [
+    {
+      "actor": {
+        "reference": "Patient/SC1Patient",
+        "display": "Minnie Minimal"
+      },
+      "status": "accepted"
+    }
+  ],
+  "_priority": {
+    "extension": [
+      {
+        "url": "https://gematik.de/fhir/ISiK/v2/StructureDefinition/ISiKTerminPriorityExtension",
+        "valueCodeableConcept": {
+          "coding": [
+            {
+              "code": "25876001",
+              "system": "http://snomed.info/sct"
+            }
+          ]
+        }
+      }
+    ]
+  }
+}
