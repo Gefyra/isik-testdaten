@@ -1,0 +1,47 @@
+{
+  "resourceType": "Observation",
+  "id": "SC1Observation17",
+  "meta": {
+    "profile": [
+      "https://gematik.de/fhir/ISiK/v2/StructureDefinition/ISiKKoerpergroesse",
+      "http://hl7.org/fhir/StructureDefinition/bodyheight",
+      "http://fhir.de/StructureDefinition/observation-de-vitalsign-koerpergroesse"
+    ]
+  },
+  "category": [
+    {
+      "coding": [
+        {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "vital-signs"
+        }
+      ]
+    }
+  ],
+  "valueQuantity": {
+    "system": "http://unitsofmeasure.org",
+    "value": 168,
+    "code": "cm",
+    "unit": "centimeter"
+  },
+  "status": "final",
+  "code": {
+    "coding": [
+      {
+        "code": "8302-2",
+        "system": "http://loinc.org",
+        "display": "Body height"
+      },
+      {
+        "code": "50373000",
+        "system": "http://snomed.info/sct",
+        "display": "Body height measure"
+      }
+    ],
+    "text": "Körpergröße"
+  },
+  "subject": {
+    "reference": "Patient/SC1Patient"
+  },
+  "effectiveDateTime": "2021-02-15T07:00:00+01:00"
+}
